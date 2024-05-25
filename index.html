@@ -3,40 +3,169 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>jeffvsc</title>
+      <title>portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-      <p>tadaaaaaa!!! <p>
-<center>
-           <h3>WELCOme to </h3> 
-</center>
-<i>
-      <center>
-            <b>@JEFFVSC</b>
-      </center>
-      
-</i>
-<center>
-                  <a href="FAQsite.html">
-                      <p>Faq</p>        
-      </a> 
+      <div id="header">
+            <div class="container">
+                  <nav>
+                        <img src="images/JEFFVSC__6_-removebg-preview.png" class="logo">
+                        <ul>
+                              <li><a href="#header">home</a></li>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#blogs">Blogs</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              
+                        </ul>
+                        
+                  </nav>
+                  <div class="header-text">
+                        <p>16 year kid</p>
+                        <h1>Hi,<br> Welcome to the <span>Website!</span><br>I'm Juman deep Bharati.</h1>
+                  </div>
+            </div>
+      </div>
+<!-----*---------------------------------about------------------------------->
+<br>
+<br>
+<br>
+
+<div id="about">
+      <div class="container">
+            <div class="row">
+                  <div class="about-col-1">
+                        <img src="images/Jeff_Davinci.jpg" alt="">
+                  </div>
+                  <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur doloribus natus omnis quasi mollitia laudantium totam, tempore corporis, vel iusto voluptatibus nisi rem reprehenderit recusandae delectus ipsa ipsum aut!</p>
+                        <div class="tab-titles">
+                              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                              <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                              <ul>
+                                    <li><span>Graphic Designing</span><br>designing various templates or logos</li>
+                                    <li><span>Web Dev</span><br>early-age , not much experience , can make simple structured websites</li>
+                                    <li><span>Python dev</span><br>Can work with python fluently.</li>
+                              </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                              <ul>
+                                    <li><span>2024- current</span><br>trained from freelanced and certified author</li>
+                                    <li><span>2022- current</span><br>trained from freelanced and certified author</li>
+                                    <li><span>2021 -2023</span><br>trained from Harvard CS50 course</li>
+                              </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                              <ul>
+                                    <li><span>2024</span><br>Currently on my 10th standard [highschool]</li>
+                                   
+                                    
+                              </ul>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+<!-----------------------------------blogs---------------------------------------------->
+
+<div id="blogs">
+      <div class="container">
+            <h1 class="sub-title">My Blogs</h1>
+            <br>
+            <br>
+            <h4 class="paragraph">personal blogs</h4>
+            <div class="blogs-list">
+                <div>
+                  <ul>
+                        <br>
+                        <li><a href="#">blog1</a></li>
+                        <br>
+                        <li><a href="#">blog2</a></li>
+                        <br>
+                        <li><a href="#">blog3</a></li>
+                  </ul>
+                </div>  
+            </div>
+      </div>
+</div>
 
 
-                 <a href="blogintro.html">
-            <p>blogs</p>
-                 </a>
-      <a href="aboutme.html">
-            <p>about me</p>
-      </a>
+<!----------------------contact------------------------>
+<div id="contact">
+      <div class="container">
+            <div class="row">
+                  <div class="contact-left">
+                        <h1 class="sub-title">Contact</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <br>
+                        <div class="social-icons">
+                              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <br>
+                        <button><a href="" class="pill">Download @document</a></button>
+                        <br>  
+                  <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                              <input type="text" name="Name" placeholder="Your Name" required>
+                              <input type="email" name="email" placeholder="Your Email" required>
+                              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                              <button type="submit" class="btn2">submit</button>
+                        </form>
+                        <br>
+                        <br>
+                        
+                        <span id="msg"></span>
+                  </div>
+                  
+            </div>
+      </div>
+      <br>
+      <div class="copyright">
+            <p>Copyright © jeffvsc. Made with <i class="fa-solid fa-heart"></i> by Juman deep  .</p>
+      </div>
+</div>
 
-     
-</center>
-       <br>
-<hr>
-<center>
-      <img src="Ghibli_Inspired_Car_Wallpaper.png" alt="Test Image" border="3" align="center" />
-</center>
-   
+<script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
+      function opentab(tabname){
+            for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+      }
+</script>
+<script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwbJe0wPzqzzOdbcebpxov0FMy9heJ7h4uw4OycKVRoQfSg_aP66i46PbDxhHFJAzBj0A/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                  msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
 </body>
 </html>
