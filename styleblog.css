@@ -1,0 +1,110 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box
+}
+html{
+      scroll-behavior: smooth;
+}
+body{
+      background: #080808;
+      color: #fff;
+}
+h2{
+      
+      color: black;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      
+}
+h4{
+      color: rgb(245, 28, 28);
+      font-weight: bold;
+      width: 500; height: 400;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#blogs{
+      padding: 30px 0;
+      
+
+}
+.blogs-list{
+      
+      font-size: 20px;
+      color: rgb(207, 31, 31);   
+      transition: 0.5s;   
+}
+.paragraph{
+      font: italic;
+      font-size: 25px;
+}
+.sub-title{
+      text-align: center;
+      color: #fff;
+}
+nav ul li{
+      
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+}
+nav ul li a{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+}
+nav ul li a::after{
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+}
+nav ul li a:hover::after{
+      width: 100%;
+}
+.category-right{
+      
+      margin-right: 50px;
+      margin-top: 20px;
+}
+.category-left{
+      margin-top: 20px;
+      margin-right: 50px;
+}
+.copyright{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      width:100%;
+      text-align: center;
+      padding: 25px 0;
+      font-style: italic;
+      font-weight: 100;
+      margin-top: 100px;
+}
+nav p{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative; 
+      cursor: pointer;
+}
+nav p::after{
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;  
+}
+nav p:hover::after{
+      width: 100%;
+}
