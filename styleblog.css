@@ -78,6 +78,11 @@ nav ul li a:hover::after{
       margin-top: 20px;
       margin-right: 50px;
 }
+.category-updates{
+      
+      margin-right: 50px;
+      margin-top: 20px;
+}
 .copyright{
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       width:100%;
