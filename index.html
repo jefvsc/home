@@ -22,6 +22,15 @@
                         </ul>
                         
                   </nav>
+                  <div class="container">
+            <!--<img src="Ghibli_Inspired_Car_Wallpaper.png" alt="">--> 
+            <h1 id="current-time">18:30:66</h1>
+            <div class="quotes">
+                  <p>today's quotes</p>
+                  <h2>Time is rare</h2>
+            </div>
+      </div>
+
                   <div class="header-text">
                         <p>16 year kid</p>
                         <h1>Hi,<br> Welcome to the <span>Website!</span><br>I'm Juman deep Bharati.</h1>
@@ -132,5 +141,15 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+      <script>
+      let time = document.getElementById("current-time");
+
+
+      setInterval(() =>{
+            let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+      }, 1000)
+
+</script>
 </body>
 </html>
