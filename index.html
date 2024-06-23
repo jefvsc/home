@@ -30,11 +30,8 @@
                   <p>local time</p>
                   
             </div>
-                        <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Use an element to toggle between a like/dislike icon -->
-<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+<button id="like-btn" onclick="toggleLike()">Like</button>
+<span id="like-count"></span>
       </div>
 
                   <div class="header-text">
@@ -155,10 +152,28 @@
             let d = new Date();
       time.innerHTML = d.toLocaleTimeString();
       }, 1000)
-            function myFunction(x) {
-  x.classList.toggle("fa-thumbs-down");
-}
+
 
 </script>
+      <script>
+            let data = {
+  "likes": 0
+}
+
+function toggleLike() {
+  let likeBtn = document.getElementById("like-btn");
+  let likeCount = document.getElementById("like-count");
+
+  if (likeBtn.innerHTML == "Like") {
+    likeBtn.innerHTML = "Dislike";
+    data.likes++;
+    likeCount.innerHTML = data.likes + " like(s)";
+  } else {
+    likeBtn.innerHTML = "Like";
+    data.likes--;
+    likeCount.innerHTML = data.likes + " like(s)";
+  }
+}
+      </script>
 </body>
 </html>
