@@ -25,28 +25,49 @@
                   </nav>
                   <div class="container">
             <!--<img src="Ghibli_Inspired_Car_Wallpaper.png" alt="">--> 
-            <h1 id="current-time">18:30:66</h1>
+            <h1 id="current-time">00:00:00</h1>
             <div class="quotes">
                   <p>local time</p>
                   
             </div>
-<!-- minimal settings -->
-<div data-lyket-type="updown" data-lyket-id="my-first-post"></div>
-
-<!-- with namespace -->
-<div
-  data-lyket-type="updown"
-  data-lyket-id="my-second-post"
-  data-lyket-namespace="blog"
-></div>
-
-<!-- with non-default template -->
-<div
-  data-lyket-type="updown"
-  data-lyket-id="my-third-post"
-  data-lyket-namespace="blog"
-  data-lyket-template="reddit"
- ></div>
+            <div class="container">
+                      <link rel="stylesheet" 
+          href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" /> 
+    <script src= "https://code.jquery.com/jquery-3.7.1.min.js"> 
+    </script> 
+             <style> 
+        button { 
+            background-color: transparent; 
+            border: none; 
+        } 
+  
+        .fa-heart { 
+            font-size: 25px; 
+  
+        } 
+  
+        .blank { 
+            color: #142034; 
+        } 
+  
+        .red { 
+            color: red; 
+        } 
+    </style> 
+                  <button id="like"> 
+        <i id="icon" 
+           class="fa-regular fa-heart blank"> 
+        </i> 
+    </button> 
+  
+    <script> 
+        $(document).ready(function () { 
+            $("#like").on("click", function () { 
+                $("#icon").toggleClass("red"); 
+                $("#icon").toggleClass("fa-solid"); 
+            }); 
+        }); 
+    </script> 
       </div>
 
                   <div class="header-text">
